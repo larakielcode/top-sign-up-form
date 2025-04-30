@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'Norse-font';
+    src: url('../fonts/Norse-Bold.otf');
+}
+
+/* Global font */
+@font-face {
+    font-family: 'Monserrat';
+    src: url('../fonts/monserrat-var.woff2') format('woff2');
+}
+
+body {
+    font-family: 'Monserrat';
+    font-weight: 400;
+    background-color: var(--cream-color);
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
+.left-container {
+    background-image: url('../images/a-rainbow-arcs-over-the-lush.avif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* flex: 1 1 0px; */
+    width: calc(100vw - 60%);
+    display: flex;
+    align-items: center;
+}
+
+.left-container .title-logo-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0px;
+    padding: 2rem 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.logo-title {
+    font-family: 'Norse-font';
+    font-size: 100px;
+}
+
+.left-container img {
+    width: 120px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.right-container {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 0 0px;
+}
+
+.right-container div:first-child {
+    width: 70%;
+    padding: 50px;
+}
+
+.right-container p {
+    font-size: 2.3rem;
+    color: var(--black-color);
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.right-container div:nth-child(2) {
+    background-color: var(--second-color);
+}
+
+/* 
+.right-container div:nth-child(2) p {
+    background-color: blue;
+}
+ */
+.right-container div form {
+    background: red;
+}
