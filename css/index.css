@@ -34,6 +34,32 @@ body {
   width: calc(100vw - 60%);
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+.img-source p {
+  position: absolute;
+  display: block;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.img-source a {
+  text-decoration: none;
+  color: var(--main-color);
+  background-color: white;
+  padding: 1px 5px;
+}
+
+.img-source a:hover {
+  color: var(--second-color);
 }
 
 .left-container .title-logo-bg {
@@ -75,7 +101,7 @@ body {
 }
 
 .form-controls {
-  background-color: #f5f3ed;
+  background-color: #f5f5f5;
   padding: 10px 50px;
 }
 
@@ -91,10 +117,7 @@ body {
 .form-controls label {
   font-size: 1.4rem;
   font-weight: 500;
-}
-
-.form-controls input {
-  padding: 5px 5px;
+  margin-bottom: 3px;
 }
 
 .form-controls form {
@@ -102,8 +125,21 @@ body {
   flex-flow: row wrap;
 }
 
+.form-controls form div {
+  margin: 10px 0 10px 0;
+}
+
+.form-controls form div input {
+  width: 60%;
+  border-radius: 7px;
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 1rem 1rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+}
+
 .form-controls div {
-  border: 1px solid pink;
   margin: 3px;
   flex: 1 0 400px;
 }
@@ -116,4 +152,43 @@ body {
 .passtwo {
   display: flex;
   flex-flow: column nowrap;
+}
+
+.bottom {
+  padding: 20px 50px;
+}
+
+.bottom button {
+  padding: 15px 60px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  background-color: var(--main-color);
+  color: var(--cream-color);
+  border: none;
+  border-radius: 10px;
+  margin: 15px 0 20px 0;
+  cursor: pointer;
+}
+
+.bottom button:hover {
+  background-color: var(--second-color);
+}
+
+.bottom button:active {
+  background-color: var(--accent-color);
+  color: var(--black-color);
+}
+
+.bottom p {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.bottom a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.bottom a:hover {
+  text-decoration: underline;
 }

@@ -1,23 +1,27 @@
 :root {
-    padding: 0;
-    margin: 0;
-    font-size: 10px;
-    /* Declare some own variables */
-    --main-color: #626F47;
-    --second-color: #A4B465;
-    --accent-color: #F0BB78;
-    --black-color: #333333;
-    --cream-color: #FAF6E9;
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+  /* Declare some own variables */
+  --main-color: #626f47;
+  --second-color: #a4b465;
+  --accent-color: #f0bb78;
+  --black-color: #333333;
+  --cream-color: #faf6e9;
 }
 
 h1 {
-    font-size: 5rem;
-    font-weight: 800;
-    color: var(--main-color);
+  font-size: 5rem;
+  font-weight: 800;
+  color: var(--main-color);
 }
 
 h2 {
-    font-size: 4rem;
-    font-weight: 600;
-    color: var(--black-color);
+  font-size: 4rem;
+  font-weight: 600;
+  color: var(--black-color);
+}
+
+em {
+  color: var(--main-color);
 }
